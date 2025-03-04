@@ -3,24 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Page</title>
+    <title>Enhanced HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML page with more elements.</p>
 
-    <img src="https://via.placeholder.com/150" alt="Sample Image">
+    <div class="container">
+        <h1>Welcome to My Enhanced Website</h1>
+        <p>This page includes a form, a table, and some basic styling.</p>
 
-    <h2>My Favorite Programming Languages:</h2>
-    <ul>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>C++</li>
-    </ul>
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
 
-    <button onclick="alert('Hello!')">Click Me</button>
+        <h2>My Favorite Programming Languages:</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+        </ul>
 
-    <br><br>
-    <a href="https://www.example.com">Visit Example Website</a>
+        <h2>Simple Table</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>Difficulty</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Hard</td>
+            </tr>
+        </table>
+
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
+        <button onclick="alert('Hello!')">Click Me</button>
+        <br><br>
+        <a href="https://www.example.com">Visit Example Website</a>
+    </div>
+
 </body>
 </html>
